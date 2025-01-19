@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 :root {
     --primary: #FE5D37;
     --light: #FFF5F3;
@@ -15,6 +16,7 @@
 
 
 /*** Spinner ***/
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -30,6 +32,7 @@
 
 
 /*** Button ***/
+
 .btn {
     font-weight: 500;
     transition: .5s;
@@ -67,6 +70,7 @@
 
 
 /*** Heading ***/
+
 h1,
 h2,
 h3,
@@ -98,6 +102,7 @@ h6,
 
 
 /*** Navbar ***/
+
 .navbar .navbar-nav .nav-link {
     padding: 30px 15px;
     color: var(--dark);
@@ -130,11 +135,10 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
-
     .navbar .navbar-nav {
         margin-top: 15px;
         border-top: 1px solid #EEEEEE;
@@ -149,9 +153,7 @@ h6,
         opacity: 0;
         visibility: hidden;
         transition: .5s;
-        
     }
-
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
@@ -162,6 +164,7 @@ h6,
 
 
 /*** Header ***/
+
 .header-carousel::before,
 .header-carousel::after,
 .page-header::before,
@@ -189,19 +192,16 @@ h6,
         position: relative;
         min-height: 500px;
     }
-    
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
     .header-carousel .owl-carousel-item p {
         font-size: 16px !important;
         font-weight: 400 !important;
     }
-
     .header-carousel .owl-carousel-item h1 {
         font-size: 30px;
         font-weight: 600;
@@ -244,12 +244,13 @@ h6,
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
 
 
 /*** Facility ***/
+
 .facility-item .facility-icon {
     position: relative;
     margin: 0 auto;
@@ -336,6 +337,7 @@ h6,
 
 
 /*** About ***/
+
 .about-img img {
     transition: .5s;
 }
@@ -346,6 +348,7 @@ h6,
 
 
 /*** Classes ***/
+
 .classes-item {
     transition: .5s;
 }
@@ -356,6 +359,7 @@ h6,
 
 
 /*** Team ***/
+
 .team-item .team-text {
     position: absolute;
     width: 250px;
@@ -378,6 +382,7 @@ h6,
 
 
 /*** Testimonial ***/
+
 .testimonial-carousel {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -428,6 +433,7 @@ h6,
 
 
 /*** Footer ***/
+
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 45px;
@@ -436,7 +442,7 @@ h6,
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 45px;
     transition: .3s;
 }
@@ -472,7 +478,7 @@ h6,
 }
 
 .footer .form-control {
-    border-color: rgba(255,255,255,0.5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer .copyright {
@@ -501,3 +507,356 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.column img:hover {
+    filter: grayscale(0);
+}
+
+@media (max-width: 768px) {
+    .bkcc-container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+    .gif-section,
+    .right-section {
+        flex: 1 1 100%;
+        /* Allow the sections to take up full width */
+        padding: 20px;
+    }
+    .features {
+        display: block;
+        /* Stack the feature cards vertically */
+    }
+    .feature-card {
+        flex: 1 1 100%;
+        /* Each feature card takes up full width */
+        margin: 10px 0;
+    }
+}
+
+.bkcc-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+}
+
+.bkcc-container h1,
+.bkcc-container h2,
+.bkcc-container h3 {
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+
+.bkcc-container .intro-section {
+    background: #e0f7fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.bkcc-container .intro-section p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.bkcc-container .intro-section a {
+    color: #d29105;
+    text-decoration: none;
+}
+
+.bkcc-container .intro-section a:hover {
+    text-decoration: underline;
+}
+
+.bkcc-container .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.bkcc-container .feature-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+}
+
+.bkcc-container .feature-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.bkcc-container .feature-card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.bkcc-container .partners {
+    background: #e0f2f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.bkcc-container .partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bkcc-container .partner-logos img {
+    width: 100px;
+    height: auto;
+}
+
+.hover-animate:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-xxl {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .text-center {
+        font-size: 24px;
+    }
+    .card-container {
+        display: block;
+    }
+    .card {
+        margin: 15px 0;
+    }
+    iframe {
+        height: 600px;
+    }
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Even spacing between cards */
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    width: 180px;
+    /* Fixed size for consistent layout */
+    height: 240px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+    /* Ensure text is above background */
+    position: relative;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures proper scaling without distortion */
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    /* Ensures base image is visible */
+    transition: transform 0.3s ease;
+    /* Smooth zoom effect */
+}
+
+.image:hover img {
+    transform: scale(1.1);
+    /* Slight zoom-in effect on hover */
+}
+
+.image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: center / cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+    /* Sits above the image */
+}
+
+.card:hover .image::before {
+    opacity: 1;
+}
+
+
+/* Specific background images for each card */
+
+.card:nth-child(1) .image::before {
+    background-image: url('https://images.pexels.com/photos/11286168/pexels-photo-11286168.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card:nth-child(2) .image::before {
+    background-image: url('https://images.pexels.com/photos/1262304/pexels-photo-1262304.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card:nth-child(3) .image::before {
+    background-image: url('https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card:nth-child(4) .image::before {
+    background-image: url('https://images.pexels.com/photos/17485819/pexels-photo-17485819/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-the-ways-in-which-ai-can-solve-important-problems-it-was-created-by-vincent-schwenk-as-part-of-the-visualis.png?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card:nth-child(5) .image::before {
+    background-image: url('https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card:nth-child(6) .image::before {
+    background-image: url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2fq7.jpg');
+}
+
+
+/* Floating WhatsApp button styles */
+
+
+/* Floating WhatsApp button styles */
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 70px;
+    /* Positioned above the back-to-top button */
+    right: 20px;
+    z-index: 999;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+
+/* WhatsApp menu styles */
+
+.whatsapp-menu {
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 90px;
+    /* Menu appears above the WhatsApp icon */
+    right: 0;
+    width: 200px;
+}
+
+.whatsapp-menu a {
+    display: block;
+    color: #25D366;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.whatsapp-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Back to Top Icon styles */
